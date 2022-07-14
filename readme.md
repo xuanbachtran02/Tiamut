@@ -6,6 +6,7 @@
 ![Discord](https://img.shields.io/discord/574921006817476608.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)
 ![Heroku](https://img.shields.io/badge/deploy_to-heroku-997FBC.svg?style=for-the-badge&logo=Heroku)
 
+**Update** (14 July 2022): Develop system database for guild data.
 ## What is Tiamut?
 
 Custom bot for housekeeping. The bot is for personal study about the new python library [**Hikari**](https://www.hikari-py.dev/) for developing Discord bots and practice working with other APIs as well as maintaining and hosting the application.
