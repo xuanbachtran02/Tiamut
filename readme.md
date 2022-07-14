@@ -31,7 +31,7 @@ Custom bot for housekeeping. The bot is for personal study about the new python 
 
 `Notes`: Spotify song recommendation system is being developed..
 
-## Installation
+## Hosting
 
 Unfortunately, due to how this bot functions, it cannot be invited. The lack of an invite link is to ensure an individuality to your server and grant you full control over your bot and data. Nonetheless, you can quickly obtain a free copy of Tiamut for your server by following one of the methods listed below (roughly takes 15 minutes of your time).
 
