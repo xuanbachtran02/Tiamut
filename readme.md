@@ -9,7 +9,8 @@
 **Update** (14 July 2022): Develop system database for guild data.
 ## What is Tiamut?
 
-<img src="R2-D2.gif" alt="drawing" width="200" height="250"/>
+<!-- <img src="R2-D2.gif" alt="drawing" width="200" height="250"/> -->
+<img src="bb8.gif" alt="drawing" width="200" height="250"/>
 
 Custom bot for housekeeping. The bot is for personal study about the new python library [**Hikari**](https://www.hikari-py.dev/) for developing Discord bots and practice working with other APIs as well as maintaining and hosting the application.
 
