@@ -49,7 +49,7 @@ To configure automatic updates:
 
 ### Installation
 
-Local hosting of Modmail is also possible
+Local hosting of Tiamut is also possible
 
 Install dependencies:
 
