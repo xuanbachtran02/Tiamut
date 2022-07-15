@@ -1,4 +1,6 @@
 .env
 .cache
+.cache-Nauqh
 *.db
 __pycache__/
+spotify.py
