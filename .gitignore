@@ -4,4 +4,4 @@
 *.db
 __pycache__/
 songs.py
-.idea
+.idea/
