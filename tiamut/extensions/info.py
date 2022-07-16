@@ -2,7 +2,7 @@ from datetime import datetime
 
 import hikari
 import lightbulb
-from lib.model import bonfire
+# from lib.model import bonfire
 
 """
 Handle member information
@@ -76,32 +76,32 @@ async def userinfo(ctx: lightbulb.Context) -> None:
 @lightbulb.command(
     "insert", "Insert member into database."
 )
-@lightbulb.implements(lightbulb.SlashCommand)
-async def userinfo(ctx: lightbulb.Context) -> None:
-    """
-    ID, Name, Roles, Joindate, Isbot
-    """
-    target = ctx.get_guild().get_member(ctx.options.target or ctx.user)
-    members = ctx.get_guild().get_members()
-    print(members.items)
-
-    if not target:
-        await ctx.respond("That user is not in the server.")
-        return
-
-    user_id = target.id
-    name = target.username
-    joined_at = target.joined_at
-    is_bot = str(target.is_bot)
-
-    get_roles = (await target.fetch_roles())[1:]  # All but @everyone
-    roles = ', '.join([role.name for role in get_roles])
-
-    bonfire.execute("INSERT INTO MEMBER VALUES (?, ?, ?, ?, ?)",
-                    user_id, name, roles, joined_at, is_bot)
-    bonfire.commit()
-
-    await ctx.respond(f"Added {target.mention} into bonfire")
+# @lightbulb.implements(lightbulb.SlashCommand)
+# async def userinfo(ctx: lightbulb.Context) -> None:
+#     """
+#     ID, Name, Roles, Joindate, Isbot
+#     """
+#     target = ctx.get_guild().get_member(ctx.options.target or ctx.user)
+#     members = ctx.get_guild().get_members()
+#     print(members.items)
+#
+#     if not target:
+#         await ctx.respond("That user is not in the server.")
+#         return
+#
+#     user_id = target.id
+#     name = target.username
+#     joined_at = target.joined_at
+#     is_bot = str(target.is_bot)
+#
+#     get_roles = (await target.fetch_roles())[1:]  # All but @everyone
+#     roles = ', '.join([role.name for role in get_roles])
+#
+#     bonfire.execute("INSERT INTO MEMBER VALUES (?, ?, ?, ?, ?)",
+#                     user_id, name, roles, joined_at, is_bot)
+#     bonfire.commit()
+#
+#     await ctx.respond(f"Added {target.mention} into bonfire")
 
 
 def load(bot: lightbulb.BotApp) -> None:

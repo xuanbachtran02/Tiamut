@@ -12,12 +12,12 @@ import lightbulb
 from pytz import utc
 from aiohttp import ClientSession
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from hikari.events.base_events import FailedEventT
+# from hikari.events.base_events import FailedEventT
 
 log = logging.getLogger(__name__)
 
 bot = lightbulb.BotApp(
-    os.environ["TOKEN"],
+    os.environ["DISCORD_TOKEN"],
     intents=hikari.Intents.ALL,
     case_insensitive_prefix_commands=True,
     default_enabled_guilds=int(os.environ["GUILD_ID"]),
@@ -59,9 +59,9 @@ async def on_stopping(_: hikari.StoppingEvent) -> None:
     )
 
 
-@bot.listen(hikari.ExceptionEvent)
-async def on_error(event: hikari.ExceptionEvent[FailedEventT]) -> None:
-    raise event.exception
+# @bot.listen(hikari.ExceptionEvent)
+# async def on_error(event: hikari.ExceptionEvent[FailedEventT]) -> None:
+#     raise event.exception
 
 
 def run() -> None:
