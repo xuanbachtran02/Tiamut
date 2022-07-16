@@ -4,6 +4,8 @@ from admin.model.__main__ import pipeline
 from admin.utils.scrap import playlist
 from datetime import datetime
 
+__last_modified__ = "16 July 2022"
+
 """
 Spotify plugins
 
@@ -35,8 +37,8 @@ async def suggest(ctx: lightbulb.Context) -> None:
 
     embed = (
         hikari.Embed(
-            title=f"Recommendation - `{playlistname}`",
-            description=f"`Suggested tracks` for your playlist",
+            title=f"Recommendation - {playlistname}",
+            description=f"`Suggested` tracks for your playlist",
             colour=0x181818,
             timestamp=datetime.now().astimezone(),
         )
