@@ -64,12 +64,12 @@ Clone the repo:
 
 ```sh
 $ git clone https://github.com/nauqh/tiamut
-$ cd modmail
+$ cd tiamut
 ```
 
-Rename the `.env.example` to `.env` and fill out the fields. If `.env.example` is nonexistent (hidden), create a text file named `.env` and copy the contents of [`.env.example`](https://raw.githubusercontent.com/kyb3r/modmail/master/.env.example) then modify the values.
+Create a `.env` file to store the application authentication token and guild ids.
 
-Finally, start Tiamut
+Finally, start the bot
 
 ```sh
 $ python -m tiamut
