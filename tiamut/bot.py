@@ -43,7 +43,7 @@ async def on_starting(event: hikari.StartingEvent) -> None:
 async def on_started(_: hikari.StartedEvent) -> None:
     await bot.rest.create_message(
         int(os.environ["STDOUT_CHANNEL_ID"]),
-        f"Tiamut is now online! (Version {tiamut.__version__})",
+        f"📈 Tiamut is now online! (Version {tiamut.__version__})",
     )
 
 
@@ -55,7 +55,7 @@ async def on_stopping(_: hikari.StoppingEvent) -> None:
 
     await bot.rest.create_message(
         int(os.environ["STDOUT_CHANNEL_ID"]),
-        f"Tiamut is shutting down. (Version {tiamut.__version__})",
+        f"📉 Tiamut is shutting down. (Version {tiamut.__version__})",
     )
 
 

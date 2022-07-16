@@ -3,4 +3,4 @@
 .cache-Nauqh
 *.db
 __pycache__/
-spotify.py
+songs.py
